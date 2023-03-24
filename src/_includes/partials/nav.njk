@@ -1,0 +1,30 @@
+<div class="d-flex w-100">
+    <div class="d-none d-sm-block">
+        <span class="site-title d-inline-block">
+            <a href="/">
+                adeos design
+            </a>
+        </span>
+    </div>
+    <div class="flex-grow-1 text-end">
+        <nav class="d-block">
+            {% set navPages = collections.all | eleventyNavigation %}
+            {%- for entry in navPages %}
+            <a 
+              href="{{ entry.url }}"
+              class="text-decoration-none d-block d-sm-inline-block 
+              text-center text-black mx-1
+              {% if page.url == entry.url %} current_page {% endif %}
+              {% if loop.first %} first {% elif loop.last %} last {% endif%}
+            ">
+              {{ entry.key }}
+            </a>
+            {% endfor %}
+            <a href=""
+                class="text-decoration-none d-block d-sm-inline-block text-center text-black mx-1"
+            >
+                <i class="bi bi-instagram"></i>
+            </a>            
+        </nav>
+    </div>
+</div>

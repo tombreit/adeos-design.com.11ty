@@ -1,0 +1,30 @@
+<section class="cycle-{{ cycle.next() }}">
+
+<div class="row">
+    <div class="col-sm-8 {% if cycle.current == "even" %}order-2{% endif %}    ">
+
+        <div class="section-img">
+            <img class="img-fluid" src="static/img/{{ section.data.img }}" alt="">
+        </div>
+
+    </div>
+    <div class="col-sm-4 {% if cycle.current == "even" %}order-1{% endif %}     ">
+
+        <div class="section-body-{% if cycle.current == "even" %}left{% else %}right{% endif %}">
+            <p>
+                <a 
+                    href="{{ section.url }}" 
+                    class="goto"
+                >
+                    {{ section.data.title }} &rarr;
+                </a>
+            </p>
+            <p>
+            {{ section.data.teaser }}
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</section>

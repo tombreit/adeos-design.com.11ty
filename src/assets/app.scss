@@ -1,0 +1,116 @@
+@import "npm:bootstrap/scss/functions";
+
+/* --- Theme specific variables -------- */
+
+$theme-color-yellow: #f4f021;
+
+$body-bg: $theme-color-yellow;
+$headings-font-weight: 700;
+$headings-line-height: 1.1;
+
+$line-height-base: 1.8;
+$font-size-base: 1.125rem;
+$font-weight-normal: 500;
+$font-family-sans-serif: Poppins, sans-serif;
+$body-color: black;
+
+
+$link-color: black;
+$link-decoration: none;
+// $link-hover-color:  shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration: underline;
+
+$offcanvas-horizontal-width: 100%;
+$offcanvas-bg-color: $theme-color-yellow;
+$offcanvas-color: black;
+
+$bootstrap-icons-font-dir: "npm:bootstrap-icons/font/fonts/";
+
+
+/* --- Imports ---------------------------------------------------- */
+@import "npm:bootstrap/scss/bootstrap";
+
+@import "npm:@fontsource/poppins/latin-500.css";
+@import "npm:@fontsource/poppins/latin-700.css";
+
+@import "bootstrap-icons/font/bootstrap-icons";
+@import "npm:bootstrap-icons/font/bootstrap-icons.css";
+
+@import "print.scss" print;
+
+
+/* --- Custom styles ---------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+    }
+body {
+    padding: 0;
+    }
+
+.site-header {
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: calc(6.5 * 1rem);
+}
+
+.site-title { 
+    font-size: larger; 
+    font-weight: 700;
+}
+
+.hero {
+    margin-top: 2rem;
+
+    h1 {
+        font-size: 4rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 6.5rem;
+            margin-right: 25%;
+        }
+
+    }
+    p {
+        font-weight: 700;
+        font-size: calc(2 * 1rem);
+    }
+}
+
+section {
+    margin: 3rem 0;
+}
+
+.section-body-right {
+    @include media-breakpoint-up(md) {
+        margin-left: 25%;
+    }
+}
+.section-body-left {
+    @include media-breakpoint-up(md) {
+        margin-right: 25%;
+    }
+}
+
+body > .container-all > footer {
+    text-align: left;
+    font-size: small;
+
+    a {
+        margin: 2rem 2em 2em 0;
+        display: inline-block;
+    }
+}
+
+.goto {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: black;
+    color: $body-bg;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+    }
+}
