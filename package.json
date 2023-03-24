@@ -20,7 +20,7 @@
   "scripts": {
     "eleventy:dev": "npx eleventy --serve",
     "eleventy:build": "npx eleventy",
-    "eleventy:gitlab-pages": "npx eleventy",
+    "eleventy:github-pages": "npx eleventy --pathprefix=adeos-design.com.11ty",
     "watch:sass": "parcel watch --no-hmr $npm_package_config_assets_src/app.scss --dist-dir $npm_package_config_assets_dist",
     "build:sass": "parcel build $npm_package_config_assets_src/app.scss --dist-dir $npm_package_config_assets_dist",
     "build:js": "parcel build $npm_package_config_assets_src/app.js --dist-dir $npm_package_config_assets_dist",
@@ -28,6 +28,6 @@
     "watch": "npm-run-all --parallel watch:*",
     "dev": "npm-run-all --parallel eleventy:dev watch:*",
     "build": "npm-run-all eleventy:build build:*",
-    "github-pages": "npm-run-all eleventy:gitlab-pages build:*"
+    "github-pages": "npm-run-all eleventy:github-pages build:*"
   }
 }
