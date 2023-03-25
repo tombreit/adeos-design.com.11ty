@@ -49,11 +49,14 @@ body {
 
 .site-header {
     margin-top: 1rem;
+}
 
-    .toggler {
-        font-size: 2rem;
-        padding: 0.25rem;
-    }
+
+.toggler,
+.offcanvas-close {
+    font-size: 2rem;
+    padding: 0.25rem;
+    color: black;
 }
 
 .nav-item {
@@ -89,6 +92,13 @@ h1 + p {
     --scaler: 10vw;
     font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
+
+
+// .offcanvas-header, 
+// .offcanvas-close, 
+// .offcanvas-title {
+//     border: 2px solid red;
+// }
 
 
 nav {
@@ -134,13 +144,17 @@ body > .container-all > footer {
 }
 
 .goto {
+    white-space: nowrap;
     display: inline-block;
     padding: 1em 2em;
     background-color: black;
     color: $body-bg;
     text-decoration: none;
+    transition: background-color 0.5s ease,
+                color 0.5s ease;
 
     &:hover {
-        color: white;
+        background-color: $body-bg;
+        color: black;
     }
 }
