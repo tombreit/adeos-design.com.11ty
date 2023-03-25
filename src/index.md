@@ -13,8 +13,8 @@ templateEngineOverride: njk,md
 Integer tincidunt. Cras dapibus.
 
 
-
+{# We need asyncEach instead of a for loop for our async image shortcode to work #}
 {% set cycle = cycler("odd", "even") %}
-{% for section in collections.homesection %}
+{% asyncEach section in collections.homesection %}
 {% include 'partials/home-section.njk' %}
-{% endfor %}
+{% endeach %}
