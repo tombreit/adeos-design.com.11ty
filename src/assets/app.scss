@@ -2,9 +2,10 @@
 
 /* --- Theme specific variables -------- */
 
-$theme-color-yellow: #f4f021;
+@import "theme";
+$theme-color-primary: #f4f021 !default;
 
-$body-bg: $theme-color-yellow;
+$body-bg: $theme-color-primary;
 $headings-font-weight: 700;
 $headings-line-height: 1.1;
 
@@ -21,7 +22,7 @@ $link-decoration: none;
 $link-hover-decoration: underline;
 
 $offcanvas-horizontal-width: 100%;
-$offcanvas-bg-color: $theme-color-yellow;
+$offcanvas-bg-color: $theme-color-primary;
 $offcanvas-color: black;
 
 $bootstrap-icons-font-dir: "npm:bootstrap-icons/font/fonts/";
@@ -35,8 +36,6 @@ $bootstrap-icons-font-dir: "npm:bootstrap-icons/font/fonts/";
 
 @import "bootstrap-icons/font/bootstrap-icons";
 @import "npm:bootstrap-icons/font/bootstrap-icons.css";
-
-@import "print.scss" print;
 
 
 /* --- Custom styles ---------------------------------------------------- */
@@ -124,6 +123,7 @@ section {
     img {
         max-width: 100%;
         height: auto;
+        margin-bottom: 1rem;
     }
 }
 
