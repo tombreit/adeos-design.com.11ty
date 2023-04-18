@@ -1,7 +1,8 @@
 {
     "title": "adeos design",
+    "subtitle": "Nullam quis ante. Etiam sit amet orci eget eros tinc idunt.",
     "fqdn": "adeos-design.com",
-    "abbr": "",
-    "baseUrl": "https://adeos-design.com/",
-    "instagram": "https://www.instagram.com/"
+    "image": "calm.png",
+    "baseUrl": "https://adeos-design.com",
+    "instagram": "https://www.instagram.com"
 }
