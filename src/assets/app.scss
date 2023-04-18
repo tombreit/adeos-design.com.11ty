@@ -46,6 +46,38 @@ body {
     padding: 0;
     }
 
+/* Reference: https://redstapler.co/css-animated-gradient-background/  */
+body {
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+/* Reference: https://codepen.io/P1N2O/pen/pyBNzX */
+// body {
+//     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) !important;
+// 	background-size: 400% 400% !important;
+// 	animation: gradient 15s ease infinite;
+//     height: 100vh;
+// }
+
+// @keyframes gradient {
+// 	0% {
+// 		background-position: 0% 50%;
+// 	}
+// 	50% {
+// 		background-position: 100% 50%;
+// 	}
+// 	100% {
+// 		background-position: 0% 50%;
+// 	}
+// }
+
 .site-header {
     margin-top: 1rem;
 }
@@ -104,7 +136,7 @@ nav {
     a {
         border-width: 0 0 1px 0;
         border-style: solid;
-        border-color: $body-bg;
+        border-color: transparent; // $body-bg;
         padding-bottom: 0.25rem;
 
         &:hover, 
