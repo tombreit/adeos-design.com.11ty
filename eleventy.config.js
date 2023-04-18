@@ -34,8 +34,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(EleventyNavigationPlugin);
 
-  eleventyConfig.addPassthroughCopy("src/static");
-  eleventyConfig.addPassthroughCopy({"src/static/theme/favicon.ico": "/favicon.ico"});
+  // eleventyConfig.addPassthroughCopy("src/static");
+  // eleventyConfig.addPassthroughCopy({"src/static/theme/favicon.ico": "/favicon.ico"});
+  eleventyConfig.addPassthroughCopy({ "src/images/calm.png": "images/calm.png" });
+
   eleventyConfig.addAsyncShortcode("image", imageShortcode);
 
   return {
