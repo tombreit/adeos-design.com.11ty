@@ -1,15 +1,16 @@
-<section class="cycle-{{ cycle.next() }}">
+<section class="cycle-{{ cycle.next() }}" id="section-{{ section.data.title|slugify }}">
 
 <div class="row">
-<div class="col-sm-8 {% if cycle.current == "even" %}order-sm-2{% endif %}">
+<div class="col-sm-7 {% if cycle.current == "even" %}order-sm-2{% endif %}">
   <div class="section-img">
     {% image section.data.img, "" %}
     {# <img class="img-fluid" src="static/img/{{ section.data.img }}" alt=""> #}
   </div>
 
   </div>
-  <div class="col-sm-4 {% if cycle.current == "even" %}order-sm-1{% endif %}     ">
+  <div class="col-sm-5 {% if cycle.current == "even" %}order-sm-1{% endif %}">
     <div class="section-body-{% if cycle.current == "even" %}left{% else %}right{% endif %}">
+      {# commented out for now as we only use sections on homepage and no subpages
       <p>
           <a 
               href="{{ section.url }}" 
@@ -18,9 +19,19 @@
               {{ section.data.title }} &rarr;
           </a>
       </p>
+      #}
+      <h3>
+        {{ section.data.title }}
+      </h3>
+      <h4>
+        {{ section.data.subtitle }}
+      </h4>
       <p>
       {{ section.data.teaser }}
       </p>
+      <div>
+        {{ section.templateContent | safe }}
+      </div>
     </div>
   </div>
 </div>

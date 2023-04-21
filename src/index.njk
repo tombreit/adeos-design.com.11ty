@@ -6,7 +6,6 @@ eleventyNavigation:
 templateEngineOverride: njk,md
 ---
 
-
 <h1>
   {{ site.subtitle }}
 </h1>
@@ -15,9 +14,8 @@ templateEngineOverride: njk,md
   {{ site.title }}
 </h2>
 
-
 {# We need asyncEach instead of a for loop for our async image shortcode to work #}
 {% set cycle = cycler("odd", "even") %}
-{% asyncEach section in collections.homesection %}
+{% asyncEach section in collections.homesection | sort(false, false, 'data.eleventyNavigation.order') %}
 {% include 'partials/home-section.njk' %}
 {% endeach %}
