@@ -15,7 +15,8 @@
                 class="nav-item d-block d-sm-inline-block text-center mx-1
                 {% if page.url == entry.url %} current-page {% endif %}
                 {% if loop.first %} first {% elif loop.last %} last {% endif%}
-                ">
+                "
+                >
                 {{ entry.key }}
                 </a>
             {% endfor %}
