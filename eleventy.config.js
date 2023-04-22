@@ -36,7 +36,7 @@ module.exports = function (eleventyConfig) {
 
   // eleventyConfig.addPassthroughCopy("src/static");
   // eleventyConfig.addPassthroughCopy({"src/static/theme/favicon.ico": "/favicon.ico"});
-  eleventyConfig.addPassthroughCopy({ "src/images/calm.png": "images/calm.png" });
+  eleventyConfig.addPassthroughCopy({ "src/images/calm.jpg": "images/calm.jpg" });
 
   eleventyConfig.addAsyncShortcode("image", imageShortcode);
 
