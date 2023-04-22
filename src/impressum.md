@@ -5,8 +5,8 @@
 Andrea Breitner  
 Astrid-Lindgren-Str. 10  
 79100 Freiburg  
-Telefon: [+49 (0)761 15282451](tel:+4976115282451)  
-E-Mail: [mail@adeos-design.com](mail@adeos-design.com)  
+[+49 (0)761 15282451](tel:+4976115282451)  
+[mail@adeos-design.com](mailto:mail@adeos-design.com)  
 
 
 ## Realisation
