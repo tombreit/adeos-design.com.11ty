@@ -11,6 +11,5 @@ Astrid-Lindgren-Str. 10
 
 ## Realisation
 
-*thms.de*  
 [thms.de](https://thms.de)  
 [mail@thms.de](mailto:mail@thms.de)  
