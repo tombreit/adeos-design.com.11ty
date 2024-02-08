@@ -37,7 +37,6 @@ $bootstrap-icons-font-dir: "npm:bootstrap-icons/font/fonts/";
 @import "bootstrap-icons/font/bootstrap-icons";
 @import "npm:bootstrap-icons/font/bootstrap-icons.css";
 
-
 /* --- Custom styles ---------------------------------------------------- */
 html {
     scroll-behavior: smooth;
@@ -85,19 +84,20 @@ body {
 }
 
 .is-sticky {
-    // background: linear-gradient(180deg, white, transparent);
 
     .site-title, 
     .site-nav {
         transition: background-color 1s;
         transition-timing-function: ease-in-out;
-        background-color: $body-bg;
+        // background-color: $body-bg;
+        // background: linear-gradient(180deg, $body-bg, transparent);
     }
     
     > .row {
         transition: background-color 1s;
         transition-timing-function: ease-in-out;
-        background-color: $body-bg;
+        // background-color: $body-bg;
+        background: linear-gradient(180deg, rgba(255,2555,255,0.9), rgba(255,2555,255,0.9) 40%, transparent);
     }
 }
 
