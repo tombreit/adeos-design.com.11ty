@@ -50,7 +50,7 @@ body {
     // background-size: 100% 100%;
     animation: gradient 15s linear infinite;
     animation-direction: alternate;
-    min-height: 100vh;
+    min-height: 100svh;
 }
 @keyframes gradient {
     0% {background-position: 0%}
@@ -95,7 +95,7 @@ body {
     }
     
     .offcanvas-start, 
-    > .row {
+    > div > .row {
         transition: background-color 1s;
         transition-timing-function: ease-in-out;
         // background-color: $body-bg;
@@ -178,7 +178,7 @@ section {
 
 body > .container-all > footer {
     text-align: left;
-    font-size: small;
+    font-size: x-small;
 
     a {
         margin: 2rem 2em 2em 0;
