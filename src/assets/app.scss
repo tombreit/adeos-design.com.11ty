@@ -93,6 +93,7 @@ body {
         // background: linear-gradient(180deg, $body-bg, transparent);
     }
     
+    .offcanvas-start, 
     > .row {
         transition: background-color 1s;
         transition-timing-function: ease-in-out;

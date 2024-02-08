@@ -1,5 +1,5 @@
 <div class="d-flex w-100">
-    <div class="d-none d-sm-block">
+    <div class="d-none d-md-block">
         <span class="site-title d-inline-block">
             <a href="/">
                 {{ site.title }}
@@ -7,12 +7,12 @@
         </span>
     </div>
     <div class="flex-grow-1 text-end">
-        <nav class="site-nav d-inline-block">
+        <nav class="site-nav d-md-inline-block">
             {% set navPages = collections.all | eleventyNavigation %}
             {%- for entry in navPages %}
                 <a 
                 href="#section-{{ entry.title|slugify }}"
-                class="nav-item d-block d-sm-inline-block text-center mx-1
+                class="nav-item d-block d-md-inline-block text-center mx-1
                 {% if page.url == entry.url %} current-page {% endif %}
                 {% if loop.first %} first {% elif loop.last %} last {% endif%}
                 "
