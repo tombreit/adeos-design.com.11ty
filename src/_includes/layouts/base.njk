@@ -22,26 +22,29 @@
 
 <body class="page--{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
 
+
 <header class="site-header">
-  <div class="row">
-    <div class="col-2 text-end">
-      <a 
-        class="toggler d-md-none"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasResponsive"
-        aria-controls="offcanvasResponsive"
-      >
-        <i class="bi bi-list-nested"></i>
-      </a>
-    </div>
-    <div class="col-8 text-center">
-      <span class="site-title d-inline-block d-md-none">
-        <a href="/">
-          {{ site.title }}
+  <div class="container-md container-all">
+    <div class="row">
+      <div class="col-2 text-end">
+        <a 
+          class="toggler d-md-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive"
+        >
+          <i class="bi bi-list-nested"></i>
         </a>
-    </span>
-    </div>
-    <div class="col-2">
+      </div>
+      <div class="col-8 text-center">
+        <span class="site-title d-inline-block d-md-none">
+          <a href="/">
+            {{ site.title }}
+          </a>
+      </span>
+      </div>
+      <div class="col-2">
+      </div>
     </div>
   </div>
 
