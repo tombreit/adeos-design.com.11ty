@@ -22,7 +22,7 @@ content:
   - name: home_sections
     label: Home Sections
     type: collection
-    path: src
+    path: src/**/*.md
     format: yaml-frontmatter
     filter:
       field: tags
