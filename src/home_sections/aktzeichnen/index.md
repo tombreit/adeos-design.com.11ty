@@ -8,7 +8,7 @@ eleventyNavigation:
 templateEngineOverride: njk,md
 permalink: false
 
-img: PXL_20230324_103136966.jpg
+img: /images/PXL_20230324_103136966.jpg
 teaser: Wir bieten einen gemeinsamen Raum an, indem sich jede*r wohlfühlt und der eigenen Kreativität freien Lauf lassen kann.
 ---
 

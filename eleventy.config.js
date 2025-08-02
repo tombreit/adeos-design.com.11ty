@@ -5,7 +5,7 @@ const EleventyImagePlugin = require("@11ty/eleventy-img");
 
 async function imageShortcode(src, alt, sizes) {
   const url = "images/"
-  const imageSrc = "./src/" + url + src
+  const imageSrc = "./src/" + src
 
   let metadata = await EleventyImagePlugin(imageSrc, {
     widths: [1200],
