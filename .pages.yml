@@ -18,12 +18,23 @@ content:
       sort: [eleventyNavigation.order]
     fields:
       - name: title
-        label: Section Title
+        label: Titel
         type: string
         required: true
       - name: subtitle
-        label: Section Subtitle
+        label: Untertitel
         type: string
+      - name: img
+        label: Bild
+        type: image
+      - name: teaser
+        label: Teaser Text
+        type: rich-text
+      - name: tags
+        label: Tags
+        type: array
+        default: homesection
+        hidden: true
       - name: eleventyNavigation
         label: Navigation
         type: object
@@ -34,18 +45,6 @@ content:
           - name: order
             label: Order
             type: number
-      - name: img
-        label: Bild
-        type: image
-      - name: teaser
-        label: Teaser Text
-        type: text
-      - name: tags
-        label: Tags
-        type: array
-        default: homesection
-        hidden: true
-
 
   # Home page (index.njk)
   # - name: home
