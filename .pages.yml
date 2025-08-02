@@ -6,27 +6,13 @@ media:
   output: /images
 
 content:
-  # Home page (index.njk)
-  - name: home
-    label: Home Page
-    type: file
-    path: src/index.njk
-    format: yaml-frontmatter
-    fields:
-      - name: title
-        label: Page Title
-        type: string
-        required: true
-
   # Home section pages (aktzeichnen, art, projects)
   - name: home_sections
     label: Home Sections
     type: collection
-    path: src/**/*.md
+    path: src/home_sections/
+    # filename: index.md
     format: yaml-frontmatter
-    filter:
-      field: tags
-      value: homesection
     view:
       fields: [title, eleventyNavigation.order]
       primary: title
@@ -57,6 +43,18 @@ content:
         label: Teaser Text
         type: text
 
+  # Home page (index.njk)
+  # - name: home
+  #   label: Home Page
+  #   type: file
+  #   path: src/index.njk
+  #   format: yaml-frontmatter
+  #   fields:
+  #     - name: title
+  #       label: Page Title
+  #       type: string
+  #       required: true
+
   # Legal pages
   - name: legals
     label: Legal Pages
@@ -69,6 +67,7 @@ content:
         type: text  # rich-text
         required: true
 
+  # Site settings (src/_data/site.json)
   - name: site
     label: Site settings
     path: src/_data/site.json
