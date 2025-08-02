@@ -29,6 +29,9 @@ content:
         type: image
       - name: teaser
         label: Teaser Text
+        type: text
+      - name: body
+        label: Content
         type: rich-text
       - name: tags
         label: Tags
