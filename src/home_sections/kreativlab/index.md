@@ -13,16 +13,8 @@ eleventyNavigation:
 ---
 Wir sind eine Gruppe aus sechs kreativen Köpfen und bieten in unserem Atelier verschiedene Workshops an:
 
-*   Malen
+*   eins
     
-*   Töpfern
+*   zwei
     
-*   Keramik bemalen
-    
-*   Goldschmieden
-    
-*   Drucken
-    
-*   Modeschmuck herstellen
-    
-*   DIYs jeglicher Art
+*   drei
