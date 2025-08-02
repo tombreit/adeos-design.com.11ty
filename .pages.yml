@@ -36,9 +36,8 @@ content:
             label: Order
             type: number
       - name: img
-        label: Featured Image
-        type: string
-        description: Image filename from src/images/
+        label: Bild
+        type: image
       - name: teaser
         label: Teaser Text
         type: text
