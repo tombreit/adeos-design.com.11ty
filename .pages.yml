@@ -11,7 +11,7 @@ content:
     label: Home Sections
     type: collection
     path: src/home_sections/
-    # filename: index.md
+    filename: index.md
     format: yaml-frontmatter
     view:
       fields: [title, eleventyNavigation.order]
@@ -42,6 +42,13 @@ content:
       - name: teaser
         label: Teaser Text
         type: text
+      - name: tags
+        label: Tags
+        type: array
+        items:
+          type: string
+          enum: homesection
+
 
   # Home page (index.njk)
   # - name: home
