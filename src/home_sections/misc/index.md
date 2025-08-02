@@ -1,8 +1,18 @@
 ---
 title: Kreativ Lab Freiburg
 subtitle: Ideen. Formen. Kunst. Erleben.
-img: /images/Sensual_Experience_1200x630px_Headline_2.jpg
-teaser: asdfa
+img: /images/kreativlab.avif
+teaser: >
+  Wir sind eine Gruppe aus sechs kreativen Köpfen und bieten in unserem Atelier
+  verschiedene Workshops an:
+
+      Malen
+      Töpfern
+      Keramik bemalen
+      Goldschmieden
+      Drucken
+      Modeschmuck herstellen
+      DIYs jeglicher Art
 tags: homesection
 templateEngineOverride: njk,md
 permalink: false
