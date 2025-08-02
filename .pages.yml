@@ -1,0 +1,71 @@
+# PageCMS Configuration for adeos-design.com
+# Configuration adjusted to match the actual Eleventy project structure
+
+media:
+  input: src/images
+  output: /images
+
+content:
+  # Home page (index.njk)
+  - name: home
+    label: Home Page
+    type: file
+    path: src/index.njk
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+        required: true
+
+  # Home section pages (aktzeichnen, art, projects)
+  - name: home_sections
+    label: Home Sections
+    type: collection
+    path: src/*/index.md
+    format: yaml-frontmatter
+    view:
+      fields: [title, eleventyNavigation.order]
+      primary: title
+      sort: [eleventyNavigation.order]
+    fields:
+      - name: title
+        label: Section Title
+        type: string
+        required: true
+      - name: subtitle
+        label: Section Subtitle
+        type: string
+      - name: eleventyNavigation
+        label: Navigation
+        type: object
+        fields:
+          - name: key
+            label: Navigation Key
+            type: string
+          - name: order
+            label: Order
+            type: number
+      - name: img
+        label: Featured Image
+        type: string
+        description: Image filename from src/images/
+      - name: teaser
+        label: Teaser Text
+        type: text
+
+  # Legal pages
+  - name: legals
+    label: Legal Pages
+    type: file
+    path: src/legals.md
+    format: markdown
+    fields:
+      - name: body
+        label: Content
+        type: text
+        required: true
+
+settings:
+  content:
+    merge: true
