@@ -45,9 +45,8 @@ content:
       - name: tags
         label: Tags
         type: array
-        items:
-          type: string
-          enum: homesection
+        default: [homesection]
+        hidden: true
 
 
   # Home page (index.njk)
