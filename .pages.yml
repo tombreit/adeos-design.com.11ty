@@ -44,7 +44,7 @@ content:
       - name: tags
         label: Tags
         type: array
-        default: [homesection]
+        default: homesection
         hidden: true
 
 
