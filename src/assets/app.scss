@@ -165,6 +165,12 @@ section {
     }
 }
 
+.section-body {
+    li > p {
+        display: inline;
+    }
+}
+
 .section-body-right {
     @include media-breakpoint-up(md) {
         margin-left: 15%;
