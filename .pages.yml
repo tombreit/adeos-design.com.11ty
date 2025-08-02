@@ -1,5 +1,4 @@
 # PageCMS Configuration for adeos-design.com
-# Configuration adjusted to match the actual Eleventy project structure
 
 media:
   input: src/images
@@ -61,16 +60,16 @@ content:
   #       required: true
 
   # Legal pages
-  - name: legals
-    label: Legal Pages
-    type: file
-    path: src/legals.md
-    format: markdown
-    fields:
-      - name: body
-        label: Content
-        type: text  # rich-text
-        required: true
+  # - name: legals
+  #   label: Legal Pages
+  #   type: file
+  #   path: src/legals.md
+  #   format: markdown
+  #   fields:
+  #     - name: body
+  #       label: Content
+  #       type: text  # rich-text
+  #       required: true
 
   # Site settings (src/_data/site.json)
   - name: site
@@ -84,14 +83,6 @@ content:
       - name: subtitle
         label: Website subtitle
         type: string
-      - name: fqdn
-        label: Website Domain
-        type: string
-        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
-      - name: baseUrl
-        label: GitHub Pages Base URL
-        type: string
-        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
       - name: instagram
         label: Instagram Link
         type: string
@@ -100,6 +91,14 @@ content:
         label: Preview image
         type: image
         description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
+      # - name: fqdn
+      #   label: Website Domain
+      #   type: string
+      #   pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      # - name: baseUrl
+      #   label: GitHub Pages Base URL
+      #   type: string
+      #   pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
 
 settings:
   content:
