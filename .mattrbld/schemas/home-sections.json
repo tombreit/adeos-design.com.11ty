@@ -11,7 +11,7 @@
         "wrapping": true,
         "multiline": false
       },
-      "tab": "ungrouped",
+      "tab": "Inhalt",
       "validation": {
         "enforceMinMax": true,
         "max": null,
@@ -41,7 +41,7 @@
         "wrapping": true,
         "multiline": false
       },
-      "tab": "ungrouped",
+      "tab": "Inhalt",
       "validation": {
         "enforceMinMax": true,
         "max": null,
@@ -62,7 +62,7 @@
     },
     {
       "type": "select",
-      "default": null,
+      "default": "homesection",
       "icon": "dropdown",
       "key": "tags",
       "label": "Tags",
@@ -70,16 +70,18 @@
         "filterable": false,
         "removable": false,
         "placeholder": "Select a value…",
-        "options": []
+        "options": [
+          "homesection"
+        ]
       },
-      "tab": "ungrouped",
+      "tab": "Navigation",
       "validation": {
         "required": false
       },
       "value": null,
       "version": 1,
       "visibility": {
-        "hidden": false,
+        "hidden": true,
         "showByValue": {
           "field": null
         }
@@ -91,7 +93,7 @@
       "icon": "group",
       "key": "eleventyNavigation",
       "label": "EleventyNavigation",
-      "tab": "ungrouped",
+      "tab": "Navigation",
       "value": [
         {
           "type": "text",
@@ -104,7 +106,7 @@
             "wrapping": true,
             "multiline": false
           },
-          "tab": "ungrouped",
+          "tab": "Navigation",
           "validation": {
             "enforceMinMax": true,
             "max": null,
@@ -130,7 +132,7 @@
           "key": "order",
           "label": "Order",
           "localised": false,
-          "tab": "ungrouped",
+          "tab": "Navigation",
           "validation": {
             "max": null,
             "min": null,
@@ -155,29 +157,24 @@
       }
     },
     {
-      "type": "file",
+      "type": "image",
       "default": null,
-      "icon": "attachment",
+      "icon": "image",
       "key": "img",
       "label": "Img",
-      "localised": false,
       "options": {
+        "resolutionHint": "",
         "removable": false,
-        "allowUpload": false,
-        "root": null,
-        "filetypes": [
-          "pdf",
-          "zip"
-        ]
+        "simple": false
       },
-      "tab": "ungrouped",
+      "tab": "Inhalt",
       "validation": {
         "max": null,
         "required": false,
         "unit": "filesize (MB)"
       },
       "value": null,
-      "version": 2,
+      "version": 1,
       "visibility": {
         "hidden": false,
         "showByValue": {
@@ -236,7 +233,7 @@
           "allowInternal"
         ]
       },
-      "tab": "ungrouped",
+      "tab": "Inhalt",
       "validation": {
         "enforceMinMax": true,
         "max": null,
@@ -306,7 +303,7 @@
           "allowInternal"
         ]
       },
-      "tab": "ungrouped",
+      "tab": "Inhalt",
       "validation": {
         "enforceMinMax": true,
         "max": null,
@@ -328,7 +325,11 @@
   ],
   "tabs": [
     {
-      "label": "ungrouped",
+      "label": "Inhalt",
+      "groupAs": null
+    },
+    {
+      "label": "Navigation",
       "groupAs": null
     }
   ]
