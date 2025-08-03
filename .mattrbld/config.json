@@ -45,6 +45,17 @@
       },
       "onlyPrivileged": true,
       "protected": true
+    },
+    {
+      "icon": null,
+      "label": "Home sections",
+      "target": {
+        "name": "Project.Collection",
+        "params": {
+          "path": "/.mattrbld/collections/home-sections.json"
+        }
+      },
+      "showInDashboard": true
     }
   ],
   "slugifyOptions": {
