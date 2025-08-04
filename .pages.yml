@@ -103,6 +103,6 @@ content:
       #   pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
 
 settings:
-  hide: true
+  # hide: true
   content:
     merge: true
