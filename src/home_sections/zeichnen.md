@@ -1,11 +1,11 @@
 ---
 title: Zeichnen
 subtitle: Entdecke deine kreative Linie – zeichnen lernen mit Spaß und System
-tags: null
+tags: homesection
 eleventyNavigation:
   key: null
   order: null
-img: null
+img: /images/PXL_20230324_103136966.jpg
 teaser: >-
   <p>Dieser Zeichenkurs richtet sich an Anfänger und Fortgeschrittene, die ihre
   Fähigkeiten gezielt verbessern möchten. Mit praktischen Übungen, anschaulichen

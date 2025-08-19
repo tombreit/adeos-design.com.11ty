@@ -5,13 +5,14 @@ tags: homesection
 eleventyNavigation:
   key: Aktzeichnen
   order: 5
-templateEngineOverride: njk,md
+templateEngineOverride: 'njk,md'
 permalink: false
-
 img: /images/PXL_20230324_103136966.jpg
-teaser: Wir bieten einen gemeinsamen Raum an, indem sich jede*r wohlfühlt und der eigenen Kreativität freien Lauf lassen kann.
+teaser: >-
+  Wir bieten einen gemeinsamen Raum an, indem sich jede*r wohlfühlt und der
+  eigenen Kreativität freien Lauf lassen kann.
+___mb_schema: /.mattrbld/schemas/home-sections.json
 ---
-
 Jeden Dienstag von 18 – 20 Uhr in der Künstlerwerkstatt zum freien Aktzeichnen.
 
 Wechselnde Modelle und die gängigen Arbeitsmaterialien (verschiedene Papiere, Staffeleien, Zeichenbretter, Kohle usw.) werden von uns gestellt.
